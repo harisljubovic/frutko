@@ -6,7 +6,8 @@
 
 body {
     background-color: #cd3434 ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+    
 }
 
 h2 {
@@ -43,6 +44,34 @@ h2 {
 .nav-item a:hover {
     color: rgb(255, 255, 255); 
 }
+
+.navBarButton {
+   border: none;
+   font-weight: bold;
+   font-size: 2rem;
+}
+
+.dropdownNav {
+    all: unset;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    background-color: #8c0303;
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #D9D9D9 ;
+}
+
+.dropdownMenuTransparent {
+    background-color: transparent;
+}
+
 
 /* HERO SECTION */
 
@@ -99,12 +128,11 @@ h2 {
     
 }
 
-
 .heartBeat {
-    animation: myAnim 2s ease 0s infinite normal forwards;
+    animation: heartBeat 2s ease 0s infinite normal forwards;
 }
 
-@keyframes myAnim {
+@keyframes heartBeat {
 	0% {
 		animation-timing-function: ease-out;
 		transform: scale(1);

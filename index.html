@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/5d4d4b3419.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,12 +28,12 @@
       class="navbar navbar-expand-md container-fluid d-flex justify-content-between"
       id="navBar"
     >
-      <a class="ms-4" href="./index.html"
+      <a class="ms-3" href="./index.html"
         ><img src="./img/logo.png" alt="" id="logoImg"
       /></a>
 
       <button
-        class="navbar-toggler bg-transparent shadow-none"
+        class="navbar-toggler bg-transparent shadow-none me-3 navBarButton"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -31,9 +41,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="text-light fs-3 d-flex align-items-center"
-          ><i class="fa-solid fa-bars pe-3"></i>MENU</span
-        >
+        <span class="text-light d-flex align-items-center"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -44,10 +54,24 @@
             >
           </li>
 
-          <li class="nav-item mx-auto">
-            <a class="nav-link d-flex justify-content-center" href="#"
-              ><span class="navBorderBottom px-2">PONUDA</span></a
+          <li
+            class="dropdown d-flex justify-content-center align-items-center flex-column nav-item"
+          >
+            <a
+              class="dropdown-toggle dropdownNav"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
+              PONUDA
+            </a>
+
+            <ul class="dropdown-menu dropdownMenu" id="dropdownMenu">
+              <li><a class="dropdown-item" href="#">Voće</a></li>
+              <li><a class="dropdown-item" href="#">Povrće</a></li>
+              <li><a class="dropdown-item" href="#">Sokovi</a></li>
+            </ul>
           </li>
 
           <li class="nav-item mx-auto">
@@ -82,6 +106,7 @@
           <span class="border-bottom border-light">O nama</span>
         </h2>
         <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3>Ko smo mi?</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
             nulla, aliquam quia nihil voluptates veniam quas dolore ea, ex
@@ -106,6 +131,7 @@
           <img src="./img/img1.png" alt="" class="oNamaImg img-fluid" />
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3>Koji su naši ciljevi?</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
             nulla, aliquam quia nihil voluptates veniam quas dolore ea, ex
@@ -120,6 +146,28 @@
             reprehenderit alias ipsa deleniti! Tempora quas neque distinctio
             dignissimos ducimus, inventore cum ipsum?
           </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between align-items-center mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3>Šta nas razlikuje od drugih?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi
+            nulla, aliquam quia nihil voluptates veniam quas dolore ea, ex
+            molestiae animi vel esse itaque iste obcaecati deserunt perspiciatis
+            corrupti quisquam libero! Enim vel, provident doloremque cum omnis
+            iusto eligendi animi perferendis illo aliquam suscipit aperiam?
+            Autem corporis repellendus assumenda quidem quisquam dolores
+            perferendis eos nam laudantium sunt culpa, ipsam illo minima fugit
+            natus delectus reprehenderit nulla facere ullam in aliquid veniam
+            eveniet sapiente. Odio, consectetur expedita architecto incidunt
+            officia reiciendis pariatur enim recusandae iusto assumenda id
+            reprehenderit alias ipsa deleniti! Tempora quas neque distinctio
+            dignissimos ducimus, inventore cum ipsum?
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+          <img src="./img/img1.png" alt="" class="oNamaImg img-fluid" />
         </div>
       </div>
     </div>
